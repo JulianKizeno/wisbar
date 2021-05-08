@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+ :root {
+  --wisbar: #006886;
+  --wisbar-dark: #183762;
+  --wisbar-light: #018799;
+  --font-family-josefin: 'Josefin Sans', sans-serif;
+  --font-family-ralway: 'Raleway', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family-josefin);
+}
+ 
+.animated {
+    visibility: hidden;
+}
+
+.animated.visible {
+    visibility: visible;
+}
+
+.container{
+    display: flex;
+}
+
+.bkgrd-img1{
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('../images/architecture2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d-flex{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#home{
+    position: absolute;
+    height: 174vh;
+}
+
+.logo-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-content img{
+    width: 282px;
+    margin-bottom: 30px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 29px;
+    margin-left: 34px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    font-family: var(--font-family-josefin);
+    color: var(--wisbar-dark);
+}
+
+.main-subtitle{
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: var(--wisbar-light);
+}
+
+.content-box{
+    padding: 30px;
+    color: var(--wisbar-dark);
+}
+
+.content-box :nth-child(1), :nth-child(3){
+    font-size: 39px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.content-box :nth-child(2), :nth-child(4){
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0px 40px 0px;
+}
+
+.contact-info{
+    text-align: center;
+    color: var(--wisbar-dark);
+}
+
+@media screen and (min-width: 567px){
+    #home{
+        height: calc(100vh - -375px);
+    }
+    .d-flex{
+        padding: 20px 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .logo-content{
+        display: flex;
+        flex-direction: row;
+        font-size: 100px;
+    }
+    .logo-content img{
+        width: 250px;
+    }
+    .box-titles{
+        margin-top: 30px;
+    }
+    .main-title{
+        font-size: 92px;
+        letter-spacing: 30px;
+        margin-left: 18px;
+    }
+    .main-subtitle{
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+    .content-box, .contact-info{
+        padding: 0;
+        width: 100vw;
+    }
+    .content-box :nth-child(1){
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 855px){
+    #home{
+        width: 100%;
+        height: 100vh;
+    }
+    .logo-content img{
+        width: 200px;
+    }
+    .box-titles{
+        margin-top: 10px;
+    }
+    .main-title{
+        font-size: 95px;
+        letter-spacing: 20px;
+        margin-left: 12px;
+    }
+    .main-subtitle{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .content-box :nth-child(1), :nth-child(3){
+        font-size: 29px;
+        
+    }
+    .content-box :nth-child(2), :nth-child(4){
+        font-size: 22px;
+    }
+}
+
+
