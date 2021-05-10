@@ -181,7 +181,6 @@ html{
     .logo-content{
         display: flex;
         flex-direction: row;
-        font-size: 100px;
     }
     .logo-content img{
         width: 133px;
@@ -226,11 +225,14 @@ html{
     .d-flex{
         margin: 0 auto;
     }
+    .logo-content {
+        margin-bottom: 30px;
+    }
     .logo-content img{
         width: 200px;
     }
     .box-titles{
-        margin-top: 10px;
+        margin-top: 40px;
     }
     .main-title{
         font-size: 95px;
@@ -238,12 +240,14 @@ html{
         margin-left: 12px;
     }
     .main-subtitle{
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 4px;
+    }
+    .content-box, .contact-info {
+        max-width: 100%;
     }
     .content-box :nth-child(1), :nth-child(3){
         font-size: 29px;
-        
     }
     .content-box :nth-child(2), :nth-child(4){
         font-size: 22px;
