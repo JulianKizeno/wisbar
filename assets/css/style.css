@@ -34,77 +34,85 @@ html{
 .bkgrd-img1{
     content: ' ';
     display: block;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     opacity: 0.3;
     background-image: url('../images/architecture2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+#home{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .d-flex{
-    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-}
-
-#home{
-    position: absolute;
-    height: 174vh;
+    width: 100%;
 }
 
 .logo-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
+    width: fit-content;
 }
 
 .logo-content img{
-    width: 282px;
-    margin-bottom: 30px;
+    width: 16rem;
+    margin-bottom: 1.5rem;
 }
 
 .main-title{
     text-align: center;
-    font-size: 100px;
-    letter-spacing: 29px;
-    margin-left: 34px;
-    margin-bottom: 4px;
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+    margin: 0 auto;
     font-weight: bolder;
     font-family: var(--font-family-josefin);
     color: var(--wisbar-dark);
+    width: fit-content;
 }
 
 .main-subtitle{
     font-weight: 600;
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 5px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    letter-spacing: 0.1rem;
     color: var(--wisbar-light);
+    width: 100%;
 }
 
 .content-box{
-    padding: 30px;
+    width: 100%;
     color: var(--wisbar-dark);
+    margin: 0 auto;
 }
 
 .content-box :nth-child(1), :nth-child(3){
-    font-size: 39px;
-    text-align: center;
-    margin-bottom: 25px;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+    width: fit-content;
 }
 
 .content-box :nth-child(2), :nth-child(4){
-    font-size: 30px;
-    text-align: center;
-    margin: 0 0px 40px 0px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: fit-content;
 }
 
 .contact-info{
@@ -114,52 +122,50 @@ html{
 
 @media screen and (min-width: 500px){
     #home {
-        height: 92vh;
+        height: 100vh;
         width: 100%;
     }
     .d-flex {
-        padding: 20px 140px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
-        margin: 25px auto;
-        width: 80%;
     }
     .logo-content {
         display: flex;
         flex-direction: row;
+        margin-bottom: 1.5rem;
     }
     .logo-content img {
-        width: 133px;
-        margin-bottom: 5px;
+        width: 11.5rem;
+        margin-bottom: 0.5rem;
     }
     .box-titles {
-        margin-top: 10px;
+        margin-top: 1rem;
     }
     .main-title {
-        font-size: 50px;
-        letter-spacing: 30px;
-        margin-left: 18px;
+        font-size: 4.5rem;
+        letter-spacing: 3rem;
+        margin-left: 1.8rem;
     }
     .main-subtitle {
-        font-size: 21px;
-        letter-spacing: 2px;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
     }
     .content-box, .contact-info{
         padding: 0;
         width: 100vw;
     }
     .content-box :nth-child(1), :nth-child(3) {
-        font-size: 28px;
+        font-size: 2rem;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
     .content-box :nth-child(2), :nth-child(4) {
-        font-size: 23px;
+        font-size: 1.8rem;
         text-align: center;
-        margin: 0px 0px 12px 0px;
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -168,90 +174,39 @@ html{
         height: 92vh;
         width: 100%;
     }
-    .d-flex{
-        padding: 20px 140px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin: 22px auto;
-        width: 80%;
-    }
+    
     .logo-content{
-        display: flex;
-        flex-direction: row;
+        margin-bottom: 3rem;
     }
+    
     .logo-content img{
-        width: 133px;
+        width: 18rem;
     }
+    
     .box-titles{
-        margin-top: 10px;
+        margin-top: 4rem;
     }
     .main-title{
-        font-size: 71px;
-        letter-spacing: 30px;
-        margin-left: 18px;
+        font-size: 7rem;
+        letter-spacing: 2rem;
+        margin-left: 1rem;
     }
     .main-subtitle{
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 2.1rem;
     }
+   
     .content-box, .contact-info{
         padding: 0;
         width: 100vw;
     }
-    .content-box :nth-child(1){
-        font-size: 35px;
-        margin-bottom: 10px;
-    }
-    .content-box :nth-child(2), :nth-child(4) {
-        font-size: 28px;
-        text-align: center;
-        margin: 0px 0px 21px 0px;
-    }
-    .content-box :nth-child(1), :nth-child(3) {
-        font-size: 35px;
-        text-align: center;
-        margin-bottom: 8px;
-    }
-}
-
-@media screen and (min-width: 855px){
-    #home{
-        width: 100%;
-        height: 100vh;
-    }
-    .d-flex{
-        margin: 0 auto;
-    }
-    .logo-content {
-        margin-bottom: 30px;
-    }
-    .logo-content img{
-        width: 200px;
-    }
-    .box-titles{
-        margin-top: 40px;
-    }
-    .main-title{
-        font-size: 95px;
-        letter-spacing: 20px;
-        margin-left: 12px;
-    }
-    .main-subtitle{
-        font-size: 24px;
-        letter-spacing: 4px;
-    }
-    .content-box, .contact-info {
-        max-width: 100%;
-    }
     .content-box :nth-child(1), :nth-child(3){
-        font-size: 29px;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
-    .content-box :nth-child(2), :nth-child(4){
-        font-size: 22px;
+     
+    .content-box :nth-child(2), :nth-child(4) {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 3rem;
     }
 }
-
-
