@@ -170,43 +170,51 @@ html{
 }
 
 @media screen and (min-width: 767px){
-    #home{
-        height: 92vh;
+    #home {
+        height: 100vh;
         width: 100%;
     }
-    
-    .logo-content{
-        margin-bottom: 3rem;
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
-    
-    .logo-content img{
-        width: 18rem;
+    .logo-content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;    
     }
-    
-    .box-titles{
-        margin-top: 4rem;
+    .logo-content img {
+        width: 12rem;
+        margin-bottom: 0.5rem;
     }
-    .main-title{
-        font-size: 7rem;
+    .box-titles {
+        margin-top: 3rem;
+    }
+    .main-title {
+        font-size: 5.5rem;
         letter-spacing: 2rem;
         margin-left: 1rem;
     }
-    .main-subtitle{
-        font-size: 2.1rem;
+    .main-subtitle {
+        font-size: 1.9rem;
+        letter-spacing: 0.2rem;
     }
-   
     .content-box, .contact-info{
         padding: 0;
         width: 100vw;
     }
-    .content-box :nth-child(1), :nth-child(3){
+    .content-box :nth-child(1), :nth-child(3) {
         font-size: 2.5rem;
-        margin-bottom: 1rem;
+        text-align: center;
+        margin-bottom: 0.8rem;
     }
-     
     .content-box :nth-child(2), :nth-child(4) {
         font-size: 1.8rem;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
+
