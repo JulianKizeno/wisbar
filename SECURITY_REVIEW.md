@@ -12,7 +12,7 @@ Sin manifiesto npm aplicable; la revisión de bibliotecas vendorizadas se descri
 
 ## Verificación
 
-- Revisión estática del cambio; sin prueba de despliegue ni verificación de servicios externos.
+- Chromium: page loads, jQuery prototype-pollution regression; correctos.
 
 ## Límites y configuración
 
